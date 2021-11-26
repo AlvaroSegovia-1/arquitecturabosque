@@ -26,6 +26,7 @@ h1,
 h2,
 h3 {
   font-weight: 900;
+  line-height: 1.2;
   margin: 1rem 0 4rem 0;
 }
 h1 {
@@ -199,4 +200,33 @@ img {
   margin: 0;
   line-height: 5;
   font-size: 1.8rem;
+}
+
+/**Nosotros**/
+.nosotros {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-image: url(../img/nosotros.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+@media (min-width: 768px) {
+  .nosotros {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.contenido-nosotros {
+  background-color: var(--blanco);
+  padding: 5rem;
+}
+@media (min-width: 768px) {
+  .contenido-nosotros {
+    grid-column: 2/4;
+    border-color: 1px solid black;
+    border-radius: 10px;
+  }
+}
+.contenido-nosotros h2,
+.contenido-nosotros p {
+  margin-bottom: 1rem;
 }
