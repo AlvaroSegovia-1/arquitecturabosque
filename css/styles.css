@@ -209,21 +209,26 @@ img {
   background-image: url(../img/nosotros.jpg);
   background-repeat: no-repeat;
   background-position: bottom center;
+  background-size: 190%;
+  
 }
 @media (min-width: 768px) {
   .nosotros {
     grid-template-columns: repeat(3, 1fr);
+    background-size: 80%;
   }
 }
 .contenido-nosotros {
   background-color: var(--blanco);
   padding: 5rem;
+  border-top-right-radius: 14px;
+  border-top-left-radius: 14px;
 }
 @media (min-width: 768px) {
   .contenido-nosotros {
     grid-column: 2/4;
     border-color: 1px solid black;
-    border-radius: 10px;
+    border-radius: 14px;
   }
 }
 .contenido-nosotros h2,
@@ -285,8 +290,9 @@ img {
 }
 @media (min-width: 768px) {
   .premier {
+    grid-template-rows: repeat(3, 1fr);
     background-position: bottom left;
-    background-size: 65%;
+    background-size: 90%;
   }
   .premier .contenido-modelo {
     grid-column: 2/3;
@@ -311,3 +317,6 @@ img {
     border-bottom-left-radius: 14px;
   }
 }
+
+
+/**Galeria**/
